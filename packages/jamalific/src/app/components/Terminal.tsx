@@ -152,17 +152,17 @@ A demonstration of terminal-like interface in the browser`;
 
   return (
     <div 
-      className="w-full max-w-4xl mx-auto bg-black border border-green-500 rounded-lg overflow-hidden shadow-2xl"
+      className="w-full max-w-4xl mx-auto bg-black border border-orange-500 rounded-lg overflow-hidden shadow-2xl"
       onClick={handleTerminalClick}
     >
       {/* Terminal Header */}
-      <div className="bg-gray-800 px-4 py-2 flex items-center justify-between border-b border-green-500">
+      <div className="bg-gray-800 px-4 py-2 flex items-center justify-between border-b border-orange-500">
         <div className="flex items-center space-x-2">
           <div className="w-3 h-3 bg-red-500 rounded-full"></div>
           <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-          <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+          <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
         </div>
-        <div className="text-green-400 text-sm font-mono">
+        <div className="text-orange-400 text-sm font-mono">
           Terminal - Simple Web Terminal Test
         </div>
         <div className="w-16"></div>
@@ -176,10 +176,10 @@ A demonstration of terminal-like interface in the browser`;
         {lines.map((line, index) => (
           <div key={index} className="mb-1">
             {line.type === 'input' && (
-              <div className="text-green-400">{line.content}</div>
+              <div className="text-orange-400">{line.content}</div>
             )}
             {line.type === 'output' && (
-              <div className="text-green-300 whitespace-pre-line">{line.content}</div>
+              <div className="text-orange-300 whitespace-pre-line">{line.content}</div>
             )}
             {line.type === 'error' && (
               <div className="text-red-400">{line.content}</div>
@@ -188,7 +188,7 @@ A demonstration of terminal-like interface in the browser`;
         ))}
         
         {/* Current Input Line */}
-        <div className="flex items-center text-green-400">
+        <div className="flex items-center text-orange-400">
           <span className="mr-2">$</span>
           <input
             ref={inputRef}
@@ -196,14 +196,15 @@ A demonstration of terminal-like interface in the browser`;
             value={currentInput}
             onChange={(e) => setCurrentInput(e.target.value)}
             onKeyDown={handleKeyDown}
-            className="flex-1 bg-transparent outline-none text-green-400 font-mono"
+            className="flex-1 bg-transparent outline-none text-orange-400 font-mono"
             placeholder="Type a command..."
             autoComplete="off"
             spellCheck="false"
           />
-          <span className="animate-pulse text-green-400">█</span>
+          <span className="animate-pulse text-orange-400">█</span>
         </div>
       </div>
     </div>
   );
 }
+
