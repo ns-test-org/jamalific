@@ -70,7 +70,13 @@ export default function Calculator() {
     setWaitingForOperand(false);
   };
 
-  const Button = ({ onClick, className, children, ...props }: any) => (
+  interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+    onClick?: () => void;
+    className?: string;
+    children: React.ReactNode;
+  }
+
+  const Button = ({ onClick, className, children, ...props }: ButtonProps) => (
     <button
       onClick={onClick}
       className={`h-16 text-xl font-semibold rounded-lg transition-all duration-150 active:scale-95 ${className}`}
@@ -219,6 +225,7 @@ export default function Calculator() {
     </div>
   );
 }
+
 
 
 
