@@ -91,7 +91,7 @@ export default function Calculator() {
       <div className="bg-white rounded-3xl shadow-2xl p-6 w-full max-w-sm">
         {/* Header */}
         <div className="text-center mb-6">
-          <h1 className="text-2xl font-bold text-purple-600 mb-2">Calculator</h1>
+          <h1 className="text-2xl font-bold text-purple-600 mb-2">Purple Calculator</h1>
           <div className="w-16 h-1 bg-purple-500 mx-auto rounded-full"></div>
         </div>
 
@@ -225,6 +225,7 @@ export default function Calculator() {
     </div>
   );
 }
+
 
 
 
