@@ -163,7 +163,7 @@ A demonstration of terminal-like interface in the browser`;
           <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
         </div>
         <div className="text-orange-400 text-sm font-mono">
-          Terminal - Simple Web Terminal Test
+          Terminal
         </div>
         <div className="w-16"></div>
       </div>
@@ -207,4 +207,5 @@ A demonstration of terminal-like interface in the browser`;
     </div>
   );
 }
+
 
