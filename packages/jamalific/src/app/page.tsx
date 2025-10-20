@@ -81,7 +81,7 @@ export default function Calculator() {
   );
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-purple-300 to-purple-400 flex items-center justify-center p-4">
       <div className="bg-white rounded-3xl shadow-2xl p-6 w-full max-w-sm">
         {/* Header */}
         <div className="text-center mb-6">
@@ -219,5 +219,6 @@ export default function Calculator() {
     </div>
   );
 }
+
 
 
